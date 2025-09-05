@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jiifhons - HP Second</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      position: relative;
+      min-height: 100vh;
+    }
+
+    /* === Video Background === */
+    #bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+      object-position: center 70%; /* ✅ geser ke bawah */
+    }
+
+    header {
+      background: rgba(0,0,0,0.7);
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    header h1 img {
+      height: 30px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: rgba(255,255,255,0.8);
+      border-radius: 15px;
+      margin: 20px auto;
+      max-width: 700px;
+    }
+
+    .hero img {
+      max-width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .product {
+      background: rgba(255,255,255,0.9);
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      padding: 20px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      max-width: 150px;
+      margin-bottom: 15px;
+    }
+
+    .product h3 {
+      margin: 10px 0 5px;
+    }
+
+    .product p {
+      color: #444;
+      font-size: 0.9rem;
+    }
+
+    #kontak, #tentang {
+      padding: 40px;
+      background: rgba(255,255,255,0.9);
+      margin: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    #kontak a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    #kontak a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: rgba(0,0,0,0.8);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <!-- Video Background -->
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="walper.mp4" type="video/mp4">
+    Browser kamu tidak mendukung video.
+  </video>
+
+  <header>
+    <h1>
+      <img src="IMG_20250905_184357.png" alt="Logo Android"> Jiifhons
+    </h1>
+    <nav>
+      <a href="#">Beranda</a>
+      <a href="#produk">Produk</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Pilihan HP Second Terbaik</h2>
+    <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1631522439.84756871.png" alt="Produk Utama">
+    <p>Mulai dari Rp 1.000.000</p>
+  </section>
+
+  <section id="produk" class="products">
+    <div class="product">
+      <img src="https://bimg.akulaku.net/goods/spu/959111a6ba234258ac91d678eabd0af33790.jpg?w=726&q=80&fit=1" alt="redmi 8">
+      <h3>Redmi 8</h3>
+      <p>Mulai Rp 700.000</p>
+    </div>
+
+    <div class="product">
+      <img src="https://global.pro.infinixmobility.com/media/wysiwyg/X6525B_SMART8_PRO_base4_family_series.png" alt="infinix smart 8/8pro">
+      <h3>Infinix Smart 8 / 8 Pro</h3>
+      <p>Mulai Rp 850.000</p>
+    </div>
+
+    <div class="product">
+      <img src="https://indodana-web.imgix.net/product-installment/smartphone/xiaomi-redmi-note-8-64gb-blue.png?auto=compress&auto=format" alt="redmi Note8">
+      <h3>Redmi Note 8</h3>
+      <p>Mulai Rp 750.000</p>
+    </div>
+
+    <div class="product">
+      <img src="https://static.pasarwarga.com/imagescrop/product/550/product_temp_2a28c892d14e9129c40968f763637294.jpeg" alt="realme c11">
+      <h3>Realme C11</h3>
+      <p>Mulai Rp 600.000</p>
+    </div>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang Jiifhons</h2>
+    <p>Kami menjual HP second berkualitas dengan harga terjangkau.  
+    Semua unit sudah dicek kondisi fisik, baterai, dan performa.  
+    Cocok buat kamu yang butuh smartphone murah tapi tetap berkualitas.</p>
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak Kami</h2>
+    <p>📞 WhatsApp: <a href="https://wa.me/62852298569255" target="_blank">+62 852-298-569-255</a></p>
+    <p>📧 Email: <a href="mailto:gifroject@gmail.com">gifroject@gmail.com</a></p>
+    <p>📍 Alamat: Kp. Karamat RT02/RW09, Curugkembar, Kab. Sukabumi</p>
+  </section>
+
+  <footer>
+    © 2025 Jiifhons - Jual HP Second Berkualitas
+  </footer>
+</body>
+</html>
